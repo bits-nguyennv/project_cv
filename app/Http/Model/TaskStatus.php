@@ -4,14 +4,14 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Project_status extends Model
+class TaskStatus extends Model
 {
     protected $fillable = [
         'name'
     ];
 
-    public function project()
+    public function tasks()
     {
-        return $this->belongsTo(Project::class);
+        return $this->belongsTo(Task::class);
     }
 }

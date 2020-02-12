@@ -7,13 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Project extends Model
 {
     protected $fillable = [
-        'description',
-        'start_time',
-        'finish_time',
-        'status_id',
-        'customer_id'
+        'description',  'start_time',   'finish_time',  'status_id', 'customer_id'
     ];
-    
+
     public function customer()
     {
         return $this->belongsTo(Customer::class);
@@ -24,9 +20,9 @@ class Project extends Model
         return $this->belongsToMany(Member::class);
     }
 
-    public function project_status()
+    public function projectstatus()
     {
-        return $this->hasOne(Project_status::class);
+        return $this->hasMany(ProjectStatus::class);
     }
 
     public function tasks()

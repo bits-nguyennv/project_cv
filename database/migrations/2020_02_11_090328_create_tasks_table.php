@@ -19,9 +19,9 @@ class CreateTasksTable extends Migration
             $table->text('description', 255);
             $table->date('start_time', 255);
             $table->date('finish_time', 255);
-            $table->string('project_id', 255);
-            $table->string('member_id', 255);
-            $table->string('status_id', 255);
+            $table->integer('project_id', 255);
+            $table->integer('member_id', 255);
+            $table->integer('status_id', 255);
             $table->timestamps();
         });
     }

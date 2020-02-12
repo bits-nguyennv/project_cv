@@ -18,8 +18,8 @@ class CreateProjectsTable extends Migration
             $table->text('description', 255);
             $table->date('start_time', 255);
             $table->date('finish_time', 255);
-            $table->string('status_id', 255);
-            $table->string('customer_id', 255);
+            $table->integer('status_id', 255);
+            $table->integer('customer_id', 255);
             $table->timestamps();
         });
     }
