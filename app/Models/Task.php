@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Model;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -20,7 +20,7 @@ class Task extends Model
         return $this->belongsTo(Project::class);
     }
 
-    public function taskstatus()
+    public function tasks_tatus()
     {
         return $this->belongsTo(TaskStatus::class);
     }

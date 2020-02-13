@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Model;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class ProjectStatus extends Model
+class Customer extends Model
 {
     protected $fillable = [
-        'name'
+        'name',  'phone', 'image', 'email',  'address'
     ];
 
     public function projects()
