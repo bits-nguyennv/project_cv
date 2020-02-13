@@ -21,6 +21,7 @@ class CreateMembersTable extends Migration
             $table->string('image', 255);
             $table->string('email', 255);
             $table->string('phone', 255);
+            $table->boolean('is_admin');
             $table->timestamps();
         });
     }

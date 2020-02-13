@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -22,6 +22,6 @@ class Task extends Model
 
     public function taskstatus()
     {
-        return $this->hasMany(TaskStatus::class);
+        return $this->belongsTo(TaskStatus::class);
     }
 }

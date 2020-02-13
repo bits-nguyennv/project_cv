@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -22,7 +22,7 @@ class Project extends Model
 
     public function projectstatus()
     {
-        return $this->hasMany(ProjectStatus::class);
+        return $this->belongsTo(ProjectStatus::class);
     }
 
     public function tasks()
