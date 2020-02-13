@@ -51,10 +51,10 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="usename" class="col-md-4 col-form-label text-md-right">{{ __('Usename') }}</label>
+                                <label for="address" class="col-md-4 col-form-label text-md-right">{{ __('Address') }}</label>
                                 <div class="col-md-6">
-                                    <input id="usename" type="text" class="form-control @error('usename') is-invalid @enderror" name="usename" required autocomplete="new-usename">
-                                    @error('usename')
+                                    <input id="address" type="text" class="form-control @error('address') is-invalid @enderror" name="address" required autocomplete="new-address">
+                                    @error('addressphp')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>

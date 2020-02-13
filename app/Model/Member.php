@@ -9,7 +9,7 @@ use Illuminate\Notifications\Notifiable;
 class Member extends Authenticatable
 {
     protected $fillable = [
-        'name', 'usename', 'password', 'image',  'email', 'phone', 'is_admin'
+        'name', 'address', 'password', 'image',  'email', 'phone', 'is_admin'
     ];
 
     public function tasks()
