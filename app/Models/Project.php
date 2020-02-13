@@ -20,7 +20,7 @@ class Project extends Model
         return $this->belongsToMany(Member::class);
     }
 
-    public function project_status()
+    public function projectStatus()
     {
         return $this->belongsTo(ProjectStatus::class);
     }
